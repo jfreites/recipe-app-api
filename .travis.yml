@@ -5,8 +5,8 @@ python:
 services:
   - docker
 
-before_script: 
-  - apk add --no-cache py-pip
+before_script:
+  - apt add --no-cache py-pip
   - pip install docker-compose~=1.23.0
 
 script:
