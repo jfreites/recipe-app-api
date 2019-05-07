@@ -5,9 +5,7 @@ python:
 services:
   - docker
 
-before_script:
-  - apt add --no-cache py-pip
-  - pip install docker-compose~=1.23.0
+before_script: pip install docker-compose~=1.23.0
 
 script:
   - docker-compose run app sh -c "python manage.py test && flake8"
